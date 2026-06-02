@@ -15,6 +15,9 @@ A lightweight SillyTavern extension for browsing, searching and managing charact
 
 ## Screenshots
 
+### Button to Open
+![Button to Open](screenshots/button.png)
+
 ### Main Window
 
 ![Main Window](screenshots/main-window.png)
