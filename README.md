@@ -17,15 +17,15 @@ A lightweight SillyTavern extension for browsing, searching and managing charact
 
 ### Main Window
 
-![Main Window](screenshotsmain-window.png)
+![Main Window](screenshotsfavorites.png.png)
 
 ### Search
 
-![Search](screenshotssearch.png)
+![Search](screenshotssearch.png.png)
 
 ### Favorites
 
-![Favorites](screenshotsfavorites.png)
+![Favorites](screenshotsfavorites.png.png)
 
 ## Installation
 
