@@ -1,0 +1,11 @@
+{
+  "display_name": "Greeting Navigator",
+  "loading_order": 999,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Hakken",
+  "version": "1.0.0",
+  "homePage": ""
+}
