@@ -29,9 +29,9 @@
 }
 
 #gss_box {
-    width: 700px;
-    max-width: 90vw;
-    max-height: 80vh;
+    width: 760px;
+    max-width: 92vw;
+    max-height: 82vh;
     overflow: auto;
 
     background-color: var(--SmartThemeBlurTintColor, var(--SmartThemeBodyColor, #222));
@@ -50,20 +50,33 @@
     color: var(--SmartThemeBodyColor, #fff);
 }
 
-.gss_item {
-    border: 1px solid var(--SmartThemeBorderColor, #555);
-    border-radius: 8px;
-    padding: 10px;
-    margin: 8px 0;
-    cursor: pointer;
-    white-space: pre-wrap;
-
-    background-color: rgba(0, 0, 0, 0.15);
-    color: var(--SmartThemeBodyColor, #fff);
+#gss_tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
 }
 
-.gss_item:hover {
+.gss_tab,
+.gss_action_button {
+    padding: 6px 12px;
+    cursor: pointer;
+
+    background-color: rgba(0, 0, 0, 0.20);
+    color: var(--SmartThemeBodyColor, #fff);
+
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    border-radius: 8px;
+}
+
+.gss_tab:hover,
+.gss_action_button:hover {
     background-color: var(--SmartThemeQuoteColor, rgba(255,255,255,0.1));
+}
+
+.gss_tab_active,
+.gss_new_chat_button {
+    background-color: var(--SmartThemeQuoteColor, rgba(255,255,255,0.15));
 }
 
 #gss_search {
@@ -88,31 +101,24 @@
 .gss_hidden {
     display: none !important;
 }
-#gss_tabs {
-    display: flex;
-    gap: 8px;
-    margin: 10px 0;
-}
-
-.gss_tab {
-    padding: 6px 12px;
-    cursor: pointer;
-
-    background-color: rgba(0, 0, 0, 0.20);
-    color: var(--SmartThemeBodyColor, #fff);
-
-    border: 1px solid var(--SmartThemeBorderColor, #555);
-    border-radius: 8px;
-}
-
-.gss_tab_active {
-    background-color: var(--SmartThemeQuoteColor, rgba(255,255,255,0.15));
-}
 
 .gss_item {
     display: flex;
     gap: 10px;
     align-items: flex-start;
+
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0;
+
+    white-space: normal;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: var(--SmartThemeBodyColor, #fff);
+}
+
+.gss_item:hover {
+    background-color: rgba(255,255,255,0.04);
 }
 
 .gss_fav_button {
@@ -135,5 +141,29 @@
 
 .gss_item_content {
     flex: 1;
+    min-width: 0;
+}
+
+.gss_item_title {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.gss_item_preview {
     white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    margin-bottom: 10px;
+    line-height: 1.35;
+    opacity: 0.95;
+}
+
+.gss_item_actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.gss_action_button {
+    font-size: 0.9em;
+    padding: 5px 10px;
 }
