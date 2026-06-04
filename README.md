@@ -7,6 +7,9 @@ A lightweight SillyTavern extension for browsing, searching and managing charact
 * 🔍 Search greetings instantly
 * ⭐ Favorite greetings
 * 🎲 Random greeting selection
+* ➕ Start a new chat directly with the selected greeting
+* ✏️ Custom names for each greeting, saved per character
+* 👁 Expand or collapse greeting previews
 * 🎨 Native SillyTavern theme integration
 * 🔄 Live greeting switching
 * 📝 Markdown rendering support
